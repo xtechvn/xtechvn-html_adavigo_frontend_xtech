@@ -2516,3 +2516,39 @@
         }
     }
 }
+.page-login{
+    .box-login{
+        background: #FFF;
+        
+        padding: 48px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+        @media (max-width: 991px) {
+            padding: 20px;
+        }
+        p{
+            color: #6A6377;
+        }
+        .title-cate{
+            margin-bottom: 24px;
+        }
+    }
+    .text-link{
+        color: #6610F2;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    .question{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 24px 0;
+        img{
+            display: block;
+        }
+    }
+}
