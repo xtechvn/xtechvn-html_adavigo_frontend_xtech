@@ -1065,7 +1065,9 @@
 .bg-gray{
     background: #F4F6F8;
 }
-
+.bg-base{
+    background: #E2E9F0;
+}
 .header-main{
     background: url(images/graphics/bg-head-main.png) center bottom;
     margin-bottom: 56px;
@@ -2549,6 +2551,208 @@
         margin: 24px 0;
         img{
             display: block;
+        }
+    }
+}
+.section-gioithieu{
+    margin: 80px 0 50px;
+    @media (max-width: 991px) {
+        margin: 40px 0;
+    }
+    .list-item-count{
+        margin-top: 80px;
+        text-align: center;
+        @media (max-width: 991px) {
+           margin-top: 40px;
+        }
+        .number{
+            color: #6610F2;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 130%;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    }
+}
+.section-step{
+    .title-cate{
+        color: #0A0A0A;
+    }
+    .item{
+        position: relative;
+        &:not(:first-child){
+            &::after{
+                position: absolute;
+                left: -20px;
+                content: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.8265 21.3285L16.3265 33.8284C15.9743 34.1807 15.4965 34.3786 14.9984 34.3786C14.5002 34.3786 14.0225 34.1807 13.6702 33.8284C13.318 33.4762 13.1201 32.9985 13.1201 32.5003C13.1201 32.0022 13.318 31.5244 13.6702 31.1722L24.8437 20.0019L13.6734 8.82845C13.499 8.65404 13.3606 8.44698 13.2662 8.2191C13.1718 7.99122 13.1232 7.74698 13.1232 7.50032C13.1232 7.25367 13.1718 7.00943 13.2662 6.78155C13.3606 6.55367 13.499 6.34661 13.6734 6.1722C13.8478 5.99779 14.0548 5.85944 14.2827 5.76504C14.5106 5.67065 14.7548 5.62207 15.0015 5.62207C15.2482 5.62207 15.4924 5.67065 15.7203 5.76504C15.9482 5.85944 16.1552 5.99779 16.3296 6.1722L28.8296 18.6722C29.0042 18.8466 29.1427 19.0537 29.237 19.2818C29.3314 19.5098 29.3798 19.7542 29.3795 20.001C29.3792 20.2477 29.3302 20.492 29.2353 20.7198C29.1404 20.9476 29.0015 21.1545 28.8265 21.3285Z" fill="%235A49F8"/></svg>');
+                width: 40px;
+                height: 40px;
+                top: 20px;
+                @media (max-width:767px) {
+                    display: none;
+                }
+    
+            }
+        }
+    }
+}
+.section-list-translate{
+    position: relative;
+    @media (max-width:767px) {
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 360px;
+        height: 100%;
+        background: linear-gradient(90deg, #F6F8FA 18.14%, rgba(246, 248, 250, 0.80) 58.5%, rgba(246, 248, 250, 0.00) 99.86%);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 360px;
+        height: 100%;
+        background: linear-gradient(270deg, #F6F8FA 18.14%, rgba(246, 248, 250, 0.80) 58.5%, rgba(246, 248, 250, 0.00) 99.86%);
+    }
+}
+.grid-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 35px;
+    color: #4B4D4E;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    @media (max-width:767px) {
+        row-gap: 30px;
+        column-gap: 15px;
+    }
+    .item{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        img{
+            width: 75px;
+            height: 60px;
+            flex-shrink: 0;
+            object-fit: cover;
+            @media (max-width:767px) {
+                width: 35px;
+                height: 25px;
+             }
+        }
+    }
+}
+.section-dangky{
+    padding: 80px 0;
+    @media (max-width:767px) {
+        padding: 40px 0;    
+    }
+    position: relative;
+    background: url(images/graphics/bg-dangky1.jpg) center no-repeat;
+    &::after{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        content: url('data:image/svg+xml,<svg width="181" height="182" viewBox="0 0 181 182" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.015625" width="181" height="181" rx="90.5" fill="url(%23paint0_linear_18_174)"/><defs><linearGradient id="paint0_linear_18_174" x1="90.5" y1="0.015625" x2="90.5" y2="181.016" gradientUnits="userSpaceOnUse"><stop stop-color="%236610F2"/><stop offset="1" stop-color="%233B098C"/></linearGradient></defs></svg>');
+        @media (max-width:767px) {
+            display: none;  
+        }
+    }
+    .box-form{
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        background: rgba(163, 200, 255, 0.40);
+        backdrop-filter: blur(10px);
+        padding: 24px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        &.box-form-contact{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        h4{
+            font-size: 15px;
+            text-align: center;
+        }
+        .btn-chat{
+            border-radius: 4px;
+            background: #FFF;
+            width: 200px;
+            padding: 8px 16px;
+            color: #6610F2;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-transform: uppercase;
+            margin: auto;
+            line-height: 160%; /* 25.6px */
+            &.hotline{
+                background: #6610F2;
+                color: #fff;
+            }
+            &:hover{
+                opacity: 0.8;
+                transition: all 0.2s ease;
+            }
+        }
+        .form-default{
+            label{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            input, textarea{
+                border-radius: 8px;
+                height: 35px;
+                font-size: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.60);
+                background: rgba(255, 255, 255, 0.42);
+            }
+            textarea{
+                height: auto;
+            }
+            .btn-default{
+                padding: 7px 30px;
+                margin: auto;
+            }
+            .form-select{
+                padding:0 10px;
+                height: 35px;
+                width: 100%;
+                border-radius: 8px;
+                background: #F6F8FA;
+                border: 1px solid #E2E9F0;
+                outline: 0;
+                font-size: 15px;
+            }
         }
     }
 }
